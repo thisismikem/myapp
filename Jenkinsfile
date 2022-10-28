@@ -7,7 +7,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/thisismikem/myapp.git'
             }
         }
-        stage('Unit Test') {
+        stage('UNIT Testing') {
             steps {
                 sh 'mvn test'
             }
